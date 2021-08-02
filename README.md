@@ -2,7 +2,7 @@
 
 CompareStrings accepts either two strings or two Pandas Series' containing 
 strings, as inputs, and provides a simple way to tell how similar or dissimilar 
-two strings are.\ 
+two strings are.
 \
 By default, the compare_strings function returns the Levenshtein Distance 
 between the strings, divided by the length of the first string, with a min and 
@@ -18,7 +18,7 @@ is used, the string that contains an email address is split on the '@' and the
 email domain is discarded before the calculation is performed.\
 \
 Precision argument is used to determine the precision of the resulting float.\
-\
+
 ## Coming soon: 
 - Support for additional alternative measures of similarity
 - Support for lists of strings
