@@ -67,6 +67,13 @@ string into the second string, and 10 characters in the first string.*
 `compare_strings` also accepts pandas series as inputs. It will return a new
 DataFrame containing the inputs and a new column with the output. 
 
+|    |  email                       | full_name          |   levenshtein_proportions |
+|---:|:-----------------------------|:-------------------|--------------------------:|
+|  0 | agneta.jansson@hotmail.com   | Agneta  Jansson    |                         0 |
+|  1 | agneta_gustafsson@gmail.com  | Agneta  Gustafsson |                         0 |
+|  2 | agneta.olofsson@hotmail.com  | Agneta  Olofsson   |                         0 |
+|  3 | agneta.petersson@hotmail.com | Agneta  Petersson  |                         0 |
+
 ## Contribution
 This is my very first python package so contributions are very much welcome. 
 Suggestions include: 
