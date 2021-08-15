@@ -34,6 +34,9 @@ pip install CompareStrings
 ```
 
 ## Usage
+### Strings: 
+`compare_strings` supports indivdual strings as inputs. Examples: 
+
 ```python
 from CompareStrings import compare_strings
 
@@ -45,6 +48,10 @@ compare_strings('string one','string', methond='lev_abs')
 
 compare_strings('string one','string', methond='lev_props')
 ```
+
+### Pandas Series:
+`compare_strings` also accepts pandas series as inputs. It will return a new
+DataFrame containing the inputs and a new column with the output. 
 
 ## Contribution
 This is my very first python package so contributions are very much welcome. 
