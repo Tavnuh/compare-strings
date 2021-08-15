@@ -42,14 +42,14 @@ from CompareStrings import compare_strings
 
 # Levenshtein Distance
 
-compare_strings('string one','string', methond='lev_abs')
+compare_strings('string one','string', method='lev_abs')
 ```
-
+Out: `4`
 
 ```python
 # Levenshtein Distance as a proportion of the length of the first string (0 - 1)
 
-compare_strings('string one','string', methond='lev_props')
+compare_strings('string one','string', method='lev_props')
 ```
 
 ### Pandas Series:
