@@ -46,8 +46,8 @@ compare_strings('string one','string', method='lev_abs')
 ```
 `Out[1]: 4`
 
-There were 4 additions, deletions or substitutions required to change the first
-string into the second
+*There were 4 additions, deletions or substitutions required to change the first
+string into the second*
 
 ```python
 # Levenshtein Distance as a proportion of the length of the first string (0 - 1)
@@ -56,8 +56,8 @@ compare_strings('string one','string', method='lev_props')
 ```
 `Out[1]: 0.4`
 
-There were 4 additions, deletions or substitutions required to change the first
-string into the second string, and 10 characters in the first string. 
+*There were 4 additions, deletions or substitutions required to change the first
+string into the second string, and 10 characters in the first string. *
 
 ### Pandas Series:
 `compare_strings` also accepts pandas series as inputs. It will return a new
