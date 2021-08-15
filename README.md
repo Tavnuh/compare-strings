@@ -94,6 +94,19 @@ With `email = 1` set:
 Passing `1` to the `email` argument tells the function to ignore the characters 
 after and including the '@' in the first column when performing the calculation.
 
+#### `check_names`:
+The `check_names` argument is intended to be used in conjunction with the `email`
+argument. It adds another column to the returned DataFrame with a `True` or
+`False` value, indication whether any part of the string was found in the 
+`big_names_list`. For example, it may be useful to ignore the similarity score
+if the email address passed into the function does not contain anything 
+recognised as a name. 
+
+*Disclaimer* the names list currently contains 7.6k first and surnames from a
+number of nationalities, but  is in no way exhaustive. It also contains some 
+names that are quite short, and may return false positives if those short 
+strings are found in the inputs.
+
 ## Contribution
 This is my very first python package so contributions are very much welcome. 
 Suggestions include: 
