@@ -152,8 +152,8 @@ def compare_strings(input_1,
         # Levenshtein Distance - The absolute levenshtein distance between the 
         # two strings    
         elif method == 'lev_abs':
-            distance = Levenshtein.distance(stripped_string_2,
-                                            stripped_string_1)
+            distance = Levenshtein.distance(stripped_string_1,
+                                            stripped_string_2)
             
             return distance
         
