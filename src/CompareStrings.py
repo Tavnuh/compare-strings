@@ -250,8 +250,8 @@ def compare_strings(input_1,
                 elif email == 2:
                     contains_name = np.vectorize(check_for_name)(array_2_clean)
                     df[f'{input_2.name}_contains_name'] = contains_name
-            
-            return df
+            else:
+                return df
             
         
         
