@@ -224,6 +224,7 @@ def compare_strings(input_1,
             
             
             
+        
             """"
             check_names intended to be used in the case where one of the inputs
             contains email addresses. For example, if the user only cares 
@@ -247,8 +248,9 @@ def compare_strings(input_1,
                 elif email == 2:
                     contains_name = np.vectorize(check_for_name)(array_2_clean)
                     df[f'{input_2.name}_contains_name'] = contains_name
-                    
-
+            
+            return df
+            
         
         
         # Levenshtein Distance - The absolute levenshtein distance between the 
