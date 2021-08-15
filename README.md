@@ -21,15 +21,6 @@ the '@' and the email domain is discarded before the calculation is performed.
 The `precision` argument is used to determine the number of decimals returns 
 in the resulting float.
 
-## Coming soon: 
-- Support for additional alternative measures of similarity
-- Support for lists of strings
-- check_for_name argument - this is intended for use with the email argument,
-and checks that string (or series) for any names that are contained within the 
-email username before performing the calculation. This allows the user to 
-ignore email user names that don't contain human names.
-  
-
 ## Installation
 ```python
 pip install CompareStrings
@@ -107,6 +98,11 @@ number of nationalities, but  is in no way exhaustive. It also contains some
 names that are quite short, and may return false positives if those short 
 strings are found in the inputs.
 
+## Coming soon: 
+- Support for additional alternative measures of similarity/dissimilarity
+- Support for lists as inputs
+- Probably other stuff - want to help? See below
+  
 ## Contribution
 This is my very first python package so contributions are very much welcome. 
 Suggestions include: 
