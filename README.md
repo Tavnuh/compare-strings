@@ -77,7 +77,7 @@ Without `email` set:
 |-----:|:---------------------------------|:----------------------|--------------------------:|
 | 6203 | magnus_jonsson@hotmail.com       | Magnus  Jonsson       |                      0.46 |
 | 8990 | susanne_svensson@hotmail.com     | Susanne  Svensson     |                      0.43 |
-| 6769 | marie.eriksson@hotmail.com       | Marie  Eriksson       |                      0.46 |
+| 6769 | marie.eriksson@hotmail.com       | Ann  Eriksson         |                      0.62 |
 | 2552 | elisabeth.henriksson@hotmail.com | Elisabeth  Henriksson |                      0.38 |
 
 With `email = 1` set:
@@ -86,7 +86,7 @@ With `email = 1` set:
 |-----:|:---------------------------------|:----------------------|--------------------------:|
 | 6203 | magnus_jonsson@hotmail.com       | Magnus  Jonsson       |                         0 |
 | 8990 | susanne_svensson@hotmail.com     | Susanne  Svensson     |                         0 |
-| 6769 | marie.eriksson@hotmail.com       | Marie  Eriksson       |                         0 |
+| 6769 | marie.eriksson@hotmail.com       | Ann  Eriksson         |                      0.29 |
 | 2552 | elisabeth.henriksson@hotmail.com | Elisabeth  Henriksson |                         0 |
 
 Passing `1` to the `email` argument tells the function to ignore the characters 
