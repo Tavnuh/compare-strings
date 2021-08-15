@@ -160,10 +160,12 @@ def compare_strings(input_1,
         # Cosine Dissimilarity - the inverse of the Cosine Similarity between 
         # the two strings
         elif method == 'cosine':
-            cos_similarity = calculate_cosine_similarity([stripped_string_2,
-                                                          stripped_string_1])
+            print("Cosine similarity calculation for strings coming soon!")
             
-            return round( 1- cos_similarity,2)
+            #cos_similarity = calculate_cosine_similarity([stripped_string_2,
+            #                                              stripped_string_1])
+            
+            #return round( 1- cos_similarity,2)
         
         
     # Tests if the inputs are Pandas Series
