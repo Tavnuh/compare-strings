@@ -1,0 +1,6 @@
+|      |  email                           | full_name             |   levenshtein_proportions |
+|-----:|:---------------------------------|:----------------------|--------------------------:|
+| 6203 | magnus_jonsson@hotmail.com       | Magnus  Jonsson       |                      0.46 |
+| 8990 | susanne_svensson@hotmail.com     | Susanne  Svensson     |                      0.43 |
+| 6769 | marie.eriksson@hotmail.com       | Marie  Eriksson       |                      0.46 |
+| 2552 | elisabeth.henriksson@hotmail.com | Elisabeth  Henriksson |                      0.38 |

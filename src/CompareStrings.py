@@ -213,14 +213,12 @@ def compare_strings(input_1,
             # calculates levenshtein proportions 
             levenshtein_proportions = distances / array_1_lengths
             
-            # converts the proportions array to series
-            levenshtein_proportions = pd.Series(levenshtein_proportions)
-            
             # create a DF that contains the inputs along with lev_pros
             df = pd.DataFrame()
             df[input_1.name] = input_1
             df[input_2.name] = input_2
-            df['levenshtein_proportions'] = levenshtein_proportions
+            df['levenshtein_proportions'] = np.around(levenshtein_proportions,
+                                                      decimals = precision)
             
             
             
