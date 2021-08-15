@@ -52,7 +52,7 @@ compare_strings('string one','string', method='lev_abs')
 *There were 4 additions, deletions or substitutions required to change the first
 string into the second*
 
-```method='lev_abs'```
+```method='lev_props'```
 ```python
 # Levenshtein Distance as a proportion of the length of the first string (0 - 1)
 
