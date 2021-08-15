@@ -10,7 +10,8 @@ max value of 0 and 1 respectively, where 0 represents absolute similiarity,
 and 1 represents maximum dissimilarity.
 
 Optional argument 'method' allows selection of alternative methods of 
-calculation, such as the true Levenshtein distance, or the cosine distance. 
+calculation, such as the true Levenshtein distance, or the cosine distance (not
+yet released). 
 
 The email argument takes 1 or 2 as values, and indicates to the function that 
 either string (or series) 1 or 2 contain an email address. When this argument
