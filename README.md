@@ -97,7 +97,7 @@ after and including the '@' in the first column when performing the calculation.
 #### `check_names`:
 The `check_names` argument is intended to be used in conjunction with the `email`
 argument. It adds another column to the returned DataFrame with a `True` or
-`False` value, indication whether any part of the string was found in the 
+`False` value, indicating whether any part of the string was found in the 
 `big_names_list`. For example, it may be useful to ignore the similarity score
 if the email address passed into the function does not contain anything 
 recognised as a name. 
