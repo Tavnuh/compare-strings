@@ -13,10 +13,10 @@ Optional argument `method` allows selection of alternative methods of
 calculation, such as the absolute Levenshtein distance - `method = lev_abs`, 
 or the cosine distance (not yet released). 
 
-The `email` argument takes 1 or 2 as values, and indicates to the function that 
-either string (or series) 1 or 2 contain an email address. When this argument
-is used, the input that contains an email address is split on the '@' and the
-email domain is discarded before the calculation is performed.
+The optional `email` argument takes 1 or 2 as values, and indicates to the 
+function that either string (or series) 1 or 2 contain an email address. When 
+this argument is used, the input that contains an email address is split on 
+the '@' and the email domain is discarded before the calculation is performed.
 
 The `precision` argument is used to determine the number of decimals returns 
 in the resulting float.
