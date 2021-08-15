@@ -45,6 +45,7 @@ from CompareStrings import compare_strings
 compare_strings('string one','string', method='lev_abs')
 ```
 `Out[1]: 4`
+
 There were 4 additions, deletions or substitutions required to change the first
 string into the second
 
