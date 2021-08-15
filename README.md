@@ -89,8 +89,8 @@ With `email = 1` set:
 | 6769 | marie.eriksson@hotmail.com       | Marie  Eriksson       |                         0 |
 | 2552 | elisabeth.henriksson@hotmail.com | Elisabeth  Henriksson |                         0 |
 
-`email = 1` tells the function to ignore the characters after and including 
-the '@' when performing the calculation.
+Passing `1` to the `email` argument tells the function to ignore the characters 
+after and including the '@' in the first column when performing the calculation.
 
 ## Contribution
 This is my very first python package so contributions are very much welcome. 
