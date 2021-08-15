@@ -39,7 +39,10 @@ pip install CompareStrings
 
 ```python
 from CompareStrings import compare_strings
+```
 
+```method='lev_abs'```
+```python
 # Levenshtein Distance
 
 compare_strings('string one','string', method='lev_abs')
@@ -49,6 +52,7 @@ compare_strings('string one','string', method='lev_abs')
 *There were 4 additions, deletions or substitutions required to change the first
 string into the second*
 
+```method='lev_abs'```
 ```python
 # Levenshtein Distance as a proportion of the length of the first string (0 - 1)
 
