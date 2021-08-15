@@ -44,7 +44,7 @@ from CompareStrings import compare_strings
 
 compare_strings('string one','string', method='lev_abs')
 ```
-Out: `4`
+`Out[1]: 4`
 
 ```python
 # Levenshtein Distance as a proportion of the length of the first string (0 - 1)
