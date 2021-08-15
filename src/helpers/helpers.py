@@ -83,14 +83,4 @@ def check_for_name(string):
     return contains_name
 
 def levenshtein_own():
-    """
-    Source https://www.datacamp.com/community/tutorials/fuzzy-string-python
-    
-    CREATE IMPLEMENTATION OF THE ABOVE
-    
-    Reason: the python-Levenshtein package currently has no maintainer, and
-    providing this implementation doesn't have a high execution time cost it
-    is wise to have an imlpementation that doesn't have an unmaintained
-    dependency
-    """
-    
+    pass
