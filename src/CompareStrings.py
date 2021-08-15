@@ -232,7 +232,9 @@ def compare_strings(input_1,
             email contains a name, check_names would be True. 
             
             If True passed to check_names, assign a new column to DF with 
-            boolean returned from check_for_name function
+            boolean returned from check_for_name function. The user can then 
+            decide how they wish to interpret the values where a name was not
+            found.
             
             This isn't foolproof, as the list of names contains some smaller
             strings which may be found in words that are not names.
