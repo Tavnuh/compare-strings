@@ -47,7 +47,7 @@ string into the second*
 
 ```method='lev_props'```
 ```python
-# Levenshtein Distance as a proportion of the length of the first string (0 - 1)
+# Levenshtein Distance as a proportion of the length of the first string
 
 compare_strings('string one','string', method='lev_props')
 ```
