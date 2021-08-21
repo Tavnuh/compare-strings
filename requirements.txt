@@ -1,4 +1,0 @@
-pandas==1.2.4
-numpy==1.19.5
-python_Levenshtein==0.12.2
-scikit_learn==0.24.2

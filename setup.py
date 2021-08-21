@@ -11,9 +11,10 @@ setup(
                   "helpers\\helpers"],
       package_dir={'':'src'},
       install_requires = [
-          
+          "pandas>=1.2.4"
+          "numpy>=1.19.5"
+          "python_Levenshtein>=0.12.2"
           ], 
-
       classifiers = [
           "Programming Language :: Python :: 3",
           "Programming Language :: Python :: 3.6",
