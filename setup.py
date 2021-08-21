@@ -1,6 +1,6 @@
 from setuptools import setup
 
-with open("README.md", "r") AS readme:
+with open("README.md", "r") as readme:
     long_description = readme.read()
 
 setup(
@@ -10,6 +10,10 @@ setup(
       py_modules=["CompareStrings",
                   "helpers\\helpers"],
       package_dir={'':'src'},
+      install_requires = [
+          
+          ], 
+
       classifiers = [
           "Programming Language :: Python :: 3",
           "Programming Language :: Python :: 3.6",

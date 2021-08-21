@@ -1,9 +1,11 @@
 # Imports
 import numpy as np
 import re
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
 from BigNamesList.big_names_list import big_names_list
+### NOT YET IMPLEMENTED ###
+#from sklearn.metrics.pairwise import cosine_similarity
+#from sklearn.feature_extraction.text import CountVectorizer
+
 
 
 
@@ -48,8 +50,9 @@ def remove_punc_nums(string):
     
     return single_spaced_str
 
+### STILL IN DEVELOPMENT ###
 
-def calculate_cosine_similarity(inputs):
+#def calculate_cosine_similarity(inputs):
     
     """
     Input: list
@@ -65,11 +68,11 @@ def calculate_cosine_similarity(inputs):
     """
     
     
-    vectorizer = CountVectorizer().fit_transform(inputs)
-    vectors = vectorizer.toarray()
-    csine_sim = cosine_similarity(vectors)
+#    vectorizer = CountVectorizer().fit_transform(inputs)
+#    vectors = vectorizer.toarray()
+#    csine_sim = cosine_similarity(vectors)
 
-    return csine_sim[1][0]
+#    return csine_sim[1][0]
 
 
 def check_for_name(string):    
