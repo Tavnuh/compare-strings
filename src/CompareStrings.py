@@ -62,9 +62,8 @@ def compare_strings(input_1,
        ii.   If method == lev_props, the Levenshtein Distance between the two 
              inputs is returned as a proportion of the first input.
             
-             Outputs a float between 0 and 1, where:    
-                 0 = exact similarity
-                 1 = maximum dissimilarity             
+             Output: a float representing the Levenshtein Distance as a
+             proportion of the length of the first string
              
              If method == lev_abs, the absolute Levenshtein calculated is 
              returned for matching pairs in both input series'
@@ -139,10 +138,12 @@ def compare_strings(input_1,
                 distance = round(Levenshtein.distance(stripped_string_1,
                                                       stripped_string_2) / 
                                  len(stripped_string_1),precision)
-                if distance > 1:
-                    return 1
-                else:
-                    return distance
+                
+### Maximum value limit removed ###
+#                if distance > 1:
+#                   return 1
+#                else:
+#                    return distance
             
             except ZeroDivisionError:
                 

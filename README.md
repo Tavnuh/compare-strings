@@ -5,9 +5,9 @@ strings, as inputs, and provides a simple way to tell how similar or dissimilar
 two strings are.
 
 By default, the `compare_strings` function returns the Levenshtein Distance 
-between the strings, divided by the length of the first string, with a min and 
-max value of `0` and `1` respectively, where 0 represents absolute similiarity, 
-and 1 represents maximum dissimilarity.
+between the strings, divided by the length of the first string, where 0 
+represents absolute similiarity, higher values represent increasing 
+dissimilarity.
 
 Optional argument `method` allows selection of alternative methods of 
 calculation, such as the absolute Levenshtein distance - `method = lev_abs`, 
