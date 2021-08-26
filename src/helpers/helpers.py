@@ -51,7 +51,6 @@ def remove_punc_nums(string):
     return single_spaced_str
 
 ### STILL IN DEVELOPMENT ###
-
 #def calculate_cosine_similarity(inputs):
     
     """
