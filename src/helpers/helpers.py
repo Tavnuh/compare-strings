@@ -36,7 +36,7 @@ def remove_punc_nums(string):
     return single_spaced_str
 
 
-def calculate_cosine_similarity(inputs):
+#def calculate_cosine_similarity(inputs):
     
     """
     Input: list
