@@ -1,10 +1,12 @@
 # Imports
 import numpy as np
 import re
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import CountVectorizer
+
 from BigNamesList.big_names_list import big_names_list
 
+#NOT YET IMPLEMENTED 
+#from sklearn.metrics.pairwise import cosine_similarity
+#from sklearn.feature_extraction.text import CountVectorizer
 
 
 name_list = big_names_list()
@@ -14,21 +16,6 @@ name_list = set([x.lower() for x in name_list])
 #-----------------------------------------------------------------------------
 
 # Helper functions
-
-def split_email(email):
-    """
-    Input: string
-    Returns: "username"
-    
-    If the "email = x" argument is provided to the main function, split_email
-    is called. Splits string containing an email address on the '@', 
-    returns 0th element.
-    
-    """
-    
-    username = str.split(email,'@')[0]
-
-    return username
 
 
 
