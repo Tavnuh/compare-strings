@@ -2,15 +2,14 @@
 import numpy as np
 import re
 
-from BigNamesList.big_names_list import big_names_list
+
 
 #NOT YET IMPLEMENTED 
 #from sklearn.metrics.pairwise import cosine_similarity
 #from sklearn.feature_extraction.text import CountVectorizer
 
 
-name_list = big_names_list()
-name_list = set([x.lower() for x in name_list])
+
 
 
 #-----------------------------------------------------------------------------
@@ -21,18 +20,18 @@ name_list = set([x.lower() for x in name_list])
 ### NOT YET IMPLEMENTED
 #def calculate_cosine_similarity(inputs):
     
-    """
-    Input: list
-    Returns: "csine_sim"
-    
-    If 'cosine' is given to the method argument in the main function,
-    calculate_cosine_similarity uses sklearn's cosine_similarity which returns
-    a 2x2 array. 
-    
-    calculate_cosine_similarity returns one element representing the cosine
-    similarity between the two inputs
+"""
+Input: list
+Returns: "csine_sim"
 
-    """
+If 'cosine' is given to the method argument in the main function,
+calculate_cosine_similarity uses sklearn's cosine_similarity which returns
+a 2x2 array. 
+
+calculate_cosine_similarity returns one element representing the cosine
+similarity between the two inputs
+
+"""
     
     
     #vectorizer = CountVectorizer().fit_transform(inputs)
