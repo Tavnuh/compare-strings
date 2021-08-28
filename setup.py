@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open("README.md", "r") as readme:
+    long_description = readme.read()
+
 setup(
       name='compare-strings',
       version='0.0.1',
@@ -7,6 +10,11 @@ setup(
       py_modules=["CompareStrings",
                   "helpers\\helpers"],
       package_dir={'':'src'},
+      install_requires = [
+          "pandas>=1.2.4"
+          "numpy>=1.19.5"
+          "python_Levenshtein>=0.12.2"
+          ], 
       classifiers = [
           "Programming Language :: Python :: 3",
           "Programming Language :: Python :: 3.6",
@@ -15,4 +23,8 @@ setup(
           "Operating System :: OS Independant",
           "Intended Audience :: Financial and Insurance Industry",
           "Intended Audience :: Fraud Prevention"
-          ])
+          ],
+      long_description = long_description,
+      long_description_content_type = "text/markdown"
+      
+      )
