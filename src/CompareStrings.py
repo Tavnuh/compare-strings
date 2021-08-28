@@ -8,7 +8,7 @@ import Levenshtein
 
 # from helpers.helpers import calculate_cosine_similarity
 from helpers.helpers import check_for_name
-from helpers.helpers import remove_punc_nums
+from helpers.remove_punc_nums import remove_punc_nums
 from helpers.split_email import split_email
 
 

@@ -1,3 +1,5 @@
+import re
+
 def remove_punc_nums(string):
     """
     Input: string
