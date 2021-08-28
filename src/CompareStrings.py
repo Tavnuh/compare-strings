@@ -138,12 +138,9 @@ def compare_strings(input_1,
                 distance = round(Levenshtein.distance(stripped_string_1,
                                                       stripped_string_2) / 
                                  len(stripped_string_1),precision)
+                return distance
                 
-### Maximum value limit removed ###
-#                if distance > 1:
-#                   return 1
-#                else:
-#                    return distance
+
             
             except ZeroDivisionError:
                 
