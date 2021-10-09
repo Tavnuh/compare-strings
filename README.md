@@ -1,8 +1,5 @@
 # CompareStrings
 
-## Under construction
-- This package has not yet been released
-
 CompareStrings accepts either two strings or two Pandas Series' containing
 strings, as inputs, and provides a simple way to tell how similar or dissimilar
 two strings are.
@@ -15,6 +12,9 @@ dissimilarity.
 Optional argument `method` allows selection of alternative methods of
 calculation, such as the absolute Levenshtein distance - `method = lev_abs`,
 or the cosine distance (not yet released).
+
+CompareStrings by default stripes numeric and punctuation characters from the
+string before performing the calculation.
 
 The optional `email` argument takes 1 or 2 as values, and indicates to the
 function that either string (or series) 1 or 2 contain an email address. When
@@ -65,25 +65,25 @@ DataFrame containing the inputs and a new column with the output.
 
 The `email` argument can be used to tell the function if one of the inputs
 contains an email address, and performs some preprocessing to remove the
-domain.
+domain - for example:
 
 Without `email` set:
 
 |      |  email                           | full_name             |   levenshtein_proportions |
 |-----:|:---------------------------------|:----------------------|--------------------------:|
-| 6203 | magnus_jonsson@hotmail.com       | Magnus  Jonsson       |                      0.46 |
-| 8990 | susanne_svensson@hotmail.com     | Susanne  Svensson     |                      0.43 |
-| 6769 | marie.eriksson@hotmail.com       | Ann  Eriksson         |                      0.62 |
-| 2552 | elisabeth.henriksson@hotmail.com | Elisabeth  Henriksson |                      0.38 |
+| 6203 | tom_johnson1@hotmail.com         | Tom  Jonhson          |                      0.46 |
+| 8990 | suzanne_stevenson54@hotmail.com  | Suzanne  stevenson    |                      0.43 |
+| 6769 | marie.eriksson99@hotmail.com     | Ann  Eriksson         |                      0.62 |
+| 2552 | elisabeth.henriksson8@hotmail.com| Elisabeth  Henriksson |                      0.38 |
 
 With `email = 1` set:
 
 |      |  email                           | full_name             |   levenshtein_proportions |
 |-----:|:---------------------------------|:----------------------|--------------------------:|
-| 6203 | magnus_jonsson@hotmail.com       | Magnus  Jonsson       |                         0 |
-| 8990 | susanne_svensson@hotmail.com     | Susanne  Svensson     |                         0 |
-| 6769 | marie.eriksson@hotmail.com       | Ann  Eriksson         |                      0.29 |
-| 2552 | elisabeth.henriksson@hotmail.com | Elisabeth  Henriksson |                         0 |
+| 6203 | tom_jonson1@hotmail.com          | Tom  Jonson           |                         0 |
+| 8990 | suzanne_stevenson54@hotmail.com  | Suzanne  Stevenson    |                         0 |
+| 6769 | marie.eriksson99@hotmail.com     | Ann  Eriksson         |                      0.29 |
+| 2552 | elisabeth.henriksson8@hotmail.com| Elisabeth  Henriksson |                         0 |
 
 Passing `1` to the `email` argument tells the function to ignore the characters
 after and including the '@' in the first column when performing the calculation.
