@@ -71,7 +71,7 @@ Without `email` set:
 
 |      |  email                           | full_name             |   levenshtein_proportions |
 |-----:|:---------------------------------|:----------------------|--------------------------:|
-| 6203 | tom_johnson1@hotmail.com         | Tom  Jonhson          |                      0.46 |
+| 6203 | tom_johnson1@hotmail.com         | Tom  Johnson          |                      0.46 |
 | 8990 | suzanne_stevenson54@hotmail.com  | Suzanne  stevenson    |                      0.43 |
 | 6769 | marie.eriksson99@hotmail.com     | Ann  Eriksson         |                      0.62 |
 | 2552 | elisabeth.henriksson8@hotmail.com| Elisabeth  Henriksson |                      0.38 |
@@ -80,7 +80,7 @@ With `email = 1` set:
 
 |      |  email                           | full_name             |   levenshtein_proportions |
 |-----:|:---------------------------------|:----------------------|--------------------------:|
-| 6203 | tom_jonson1@hotmail.com          | Tom  Jonson           |                         0 |
+| 6203 | tom_johnson1@hotmail.com         | Tom  Johnson          |                         0 |
 | 8990 | suzanne_stevenson54@hotmail.com  | Suzanne  Stevenson    |                         0 |
 | 6769 | marie.eriksson99@hotmail.com     | Ann  Eriksson         |                      0.29 |
 | 2552 | elisabeth.henriksson8@hotmail.com| Elisabeth  Henriksson |                         0 |
