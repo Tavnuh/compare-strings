@@ -26,7 +26,7 @@ in the resulting float.
 
 ## Installation
 ```python
-pip install CompareStrings
+pip install compare-strings
 ```
 
 ## Usage
